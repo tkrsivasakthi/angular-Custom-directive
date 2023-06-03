@@ -1,0 +1,12 @@
+<p>The below p tag is basic attribute directive using ngstyle</p>
+<p [ngStyle]="{ background: isBlue ? 'blue' : 'red' }">
+  Attribute directive- ngStyle- change the styling of any DOM element
+</p>
+<hr />
+<p>I am custom attrivbute directive</p>
+<p appChangeColor>Custom directive by click event the color will change</p>
+<div appChangeColor>{{ number }}</div>
+<hr />
+<p>i am custom structral directive instead of *ngIf directive</p>
+<h1 *appCustomStructural="false">True</h1>
+<h1 *appCustomStructural="false">False</h1>
